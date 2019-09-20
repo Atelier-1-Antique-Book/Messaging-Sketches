@@ -44,6 +44,7 @@ function setup()
     sendButton = createButton("add word");
     // sendButton.position(sendText.x + sendText.width,height+200);
     sendButton.mousePressed(sendTheMessage);
+
     var r = getRandomInt(0, 255);
     var g = getRandomInt(0, 255);
     var b = getRandomInt(0, 255);
@@ -65,7 +66,12 @@ function draw()
     document.getElementById('instructions').style.display = 'none';
     document.getElementById('text').style.fontSize = '150%';
     document.getElementById('text').style.color = 'black';
+
+
     document.getElementById("text").innerHTML =("Today " + blank[1] + " is going shopping for antiques. " + blank[1] + " walked in to the shop and immediately noticed a " + blank[2] + " " + blank[3] + ". A solid handmade " + blank[3] + " is much more valuable than one made by machines. " + blank[1] + " was thrilled, however shouted " + blank[5] +" after discovering it had a hole in it. By the window there were gently used " + blank[6] +" and dolls with real human "+ blank[7] +". "+ blank[1] +"'s "+ blank[4] +" began tingling " + blank[8] + " from excitement after finding a "+ blank[9] + " "  + blank[10] + ". What a " + blank[11] +" day!");
+    var text = new p5.Speech();
+    text.speak("Today " + blank[1] + " is going shopping for antiques. " + blank[1] + " walked in to the shop and immediately noticed a " + blank[2] + " " + blank[3] + ". A solid handmade " + blank[3] + " is much more valuable than one made by machines. " + blank[1] + " was thrilled, however shouted " + blank[5] +" after discovering it had a hole in it. By the window there were gently used " + blank[6] +" and dolls with real human "+ blank[7] +". "+ blank[1] +"'s "+ blank[4] +" began tingling " + blank[8] + " from excitement after finding a "+ blank[9] + " "  + blank[10] + ". What a " + blank[11] +" day!");
+
   }
   else{
 
