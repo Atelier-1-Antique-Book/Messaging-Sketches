@@ -50,9 +50,18 @@ function setup()
     var b = getRandomInt(0, 255);
 document.getElementById('text').style.color = "rgb(" + r + "," + g + "," + b + ")";
 }
+function keyPressed() {
+  if (keyCode === ENTER) {
+    sendTheMessage();
+  }
 
+}
 function draw()
 {
+
+  //document.getElementById("hi").onkeypress = function() {sendTheMessage()};
+
+
   sendText.position(windowWidth/2-100,height+260);
   sendButton.position(sendText.x + sendText.width,height+260);
     blank[num] = word;
