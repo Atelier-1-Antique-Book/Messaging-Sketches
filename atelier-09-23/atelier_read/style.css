@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url("store.jpg");
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.box{
+  background-color: bisque;
+
+}
+p{
+  text-align: center;
+  font-family: 'Poppins';
+}
+#title{
+  font-size: 30px;
+}
+#instructions{
+  font-size: 22px;
+  display:block;
+  visibility: visible;
+}
+#text{
+  color:black;
+}
+@media only screen and (max-width: 1000px) {
+  html,body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
