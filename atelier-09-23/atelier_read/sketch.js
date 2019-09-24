@@ -39,11 +39,8 @@ function setup()
 
     //input box and send button
     sendText = createInput();
-    // sendText.position(windowWidth/2-100,height+200);
 
     sendButton = createButton("reveal story");
-    // sendButton.position(sendText.x + sendText.width,height+200);
-    // sendButton.mousePressed(sendTheMessage);
 
     var r = getRandomInt(0, 255);
     var g = getRandomInt(0, 255);
@@ -60,7 +57,7 @@ function draw()
 
 
     sendButton.size(100);
-    sendButton.position(sendText.x + sendText.width,height+260);
+    sendButton.position(windowWidth/2-100,height+260);
     sendButton.mousePressed(revealStory);
 
 
