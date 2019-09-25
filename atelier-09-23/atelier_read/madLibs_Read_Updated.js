@@ -19,7 +19,7 @@ let w = "";
 let word = "";
 
 
-let blank = ["placeholder", "name", "adjective", "noun", "body part (singular)","exclamation/bad word", "plural noun", "body parts (plural)","adverb","adjective","noun","adjective"]; //array of input prompts, they get replaced with user input overtime
+let blank = ["placeholder", "name", "adjective", "noun", "body part (singular)","exclamation/bad word", "plural noun", "body parts (plural)","adverb","adjective","noun","adjective", "person"]; //array of input prompts, they get replaced with user input overtime
 
 
 
@@ -139,11 +139,11 @@ document.getElementById('text').style.fontSize = '150%';
 document.getElementById('text').style.color = 'black';
 
 
-document.getElementById("text").innerHTML =("Story C would go here, but we don't have it yet.");
+document.getElementById("text").innerHTML =("Today " + blank(1) + " went to the antique store. While " + blank(1) + " was there, " + blank(1) + " found a " blank(2) + " " + blank(3) + ". " + blank(1) + " took it to the shopkeeper, who told " + blank(1) + " that the " + blank(2) + " " + blank(3) + " used to belong to a " + blank(10) + blank(13) +". " + blank(1) + " was blank(12) + ". A " blank(2) + " " + blank(3) + "with such a rich history was an incredible find!");
 
 
 var text = new p5.Speech();
-text.speak("Story C would be read here, but we don't have it yet.");
+text.speak("Today " + blank(1) + " went to the antique store. While " + blank(1) + " was there, " + blank(1) + " found a " blank(2) + " " + blank(3) + ". " + blank(1) + " took it to the shopkeeper, who told " + blank(1) + " that the " + blank(2) + " " + blank(3) + " used to belong to a " + blank(10) + blank(13) +". " + blank(1) + " was blank(12) + ". A " blank(2) + " " + blank(3) + "with such a rich history was an incredible find!");
 }
 
 function getRandomInt(min, max) {
