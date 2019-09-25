@@ -1,6 +1,7 @@
 
 /*
-load site in multiple browsers and enjoy creating a random story
+reveals stories based on words added by users
+SAVE THIS AS script.js OR THE HTML FILE WONT RECOGNIZE IT
 */
 
 
@@ -53,7 +54,9 @@ document.getElementById('text').style.color = "rgb(" + r + "," + g + "," + b + "
 function draw()
 {
 sendText.size(0);
-sendButton.size(0);
+firstButton.size(0);
+secondButton.size(0);
+thirdButton.size(0);
   blank[num] = word;
 if(num+1>total){
 
@@ -66,7 +69,7 @@ if(num+1>total){
   secondButton.mousePressed(revealStoryB);
   thirdButton.size(100);
   thirdButton.position((windowWidth/2)+50,height+260);
-  thirdButton.mousePressed(revealStoryB);
+  thirdButton.mousePressed(revealStoryC);
 
 
 }
