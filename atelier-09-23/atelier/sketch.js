@@ -17,7 +17,8 @@ let w = "";
 let word = "";
 
 
-let blank = ["placeholder", "name", "adjective", "noun", "body part (singular)","exclamation/bad word", "plural noun", "body parts (plural)","adverb","adjective","noun","adjective"]; //array of input prompts, they get replaced with user input overtime
+let blank = ["placeholder", "name", "adjective", "noun", "body part (singular)","exclamation/bad word", "plural noun", "body parts (plural)","adverb","adjective","noun","adjective", "person"];
+ //array of input prompts, they get replaced with user input overtime
 
 
 
